@@ -57,6 +57,21 @@
 						</webAppConfig>
 					</configuration>
 				</plugin>
+				<plugin>
+					<groupId>org.codehaus.cargo</groupId>
+					<artifactId>cargo-maven2-plugin</artifactId>
+					<version>1.4.9</version>
+					<configuration>
+						<container>
+							<containerId>tomcat7x</containerId>
+							<home>C:/Development/apache-tomcat-7.0.72</home>
+						</container>
+						<configuration>
+							<type>existing</type>
+							<home>C:/Development/apache-tomcat-7.0.72</home>
+						</configuration>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
